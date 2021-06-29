@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="/public/styles/styles.css" />
   <title>OngProject</title>
   <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel=" preconnect"
     href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
+
 
 <body>
   <div class='wrappCard'>
@@ -68,8 +70,54 @@
 
   </div>
 
+  <main>
+    <header></header>
 
-  <script src="./script.js"></script>
+    <section class="grid-section galeria" data-anime="scroll">
+      <ul class="custom-controls">
+        <li><img src="img/slide/foto1.jpg" alt=""></li>
+        <li><img src="img/slide/foto2.jpg" alt=""></li>
+        <li><img src="img/slide/foto3.jpg" alt=""></li>
+        <li><img src="img/slide/foto4.jpg" alt=""></li>
+        <li><img src="img/slide/foto5.jpg" alt=""></li>
+        <li><img src="img/slide/foto6.jpg" alt=""></li>
+      </ul>
+      <div class="slide-wrapper">
+        <ul class="slide">
+          <li><img src="img/slide/foto1.jpg" alt="">
+            <strong>Bullet Title</strong>
+            <br>
+            <p>Supportive text and the essential
+              context goes here.</p>
+          </li>
+          <li><img src="img/slide/foto2.jpg" alt=""></li>
+          <li><img src="img/slide/foto3.jpg" alt=""></li>
+          <li><img src="img/slide/foto4.jpg" alt=""></li>
+          <li><img src="img/slide/foto5.jpg" alt=""></li>
+          <li><img src="img/slide/foto6.jpg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="baseboard">
+        <img src="/public/images/logo-footer.svg" alt="logo-footer" />
+        <div class="links">
+          <a href="https://www.instagram.com/doacaodebem/" target="_blank">
+            <img src="/public/images/icon-instagram.svg" alt="Icone Instagram" />
+          </a>
+
+          <a href="https://www.enjoei.com.br/@doacaodebem?sid=f7dc44cb-5524-41a5-a024-4875e2691d42-1624401122564" target="_blank">
+            <img src="/public/images/icon-enjoei.svg" alt="Icone Enjoei" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+
+  <script type="module" src="js/script.js"></script>
 </body>
+
+
 
 </html>
