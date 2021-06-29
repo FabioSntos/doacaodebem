@@ -10,23 +10,23 @@ html {
   font-size: 62.5%;
 }
 
-.baseboard {
+footer {
   background: #122c3d;
   width: 100%;
   height: 10rem;
+}
+
+.baseboard {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding-left: 19rem;
-  padding-right: 20.5rem;
 }
 
 .baseboard > img {
   width: 30rem;
   height: 10rem;
-  margin-top: 1.1rem;
-  margin-bottom: 0.6rem;
 }
 
 .baseboard a img {
@@ -36,4 +36,20 @@ html {
 
 .baseboard a:nth-child(2) img {
   margin-left: 8.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .baseboard a:nth-child(2) img {
+    margin-left: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .baseboard a:nth-child(2) img {
+    margin-left: 3.5rem;
+  }
+  .baseboard > img {
+    width: 60%;
+    height: 10rem;
+  }
 }
