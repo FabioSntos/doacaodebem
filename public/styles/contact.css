@@ -1,0 +1,123 @@
+.contact {
+  background: #f8f7f7;
+}
+
+.container-contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact .container-contact #contact {
+  margin-right: 12.2rem;
+  margin-left: 29.2rem;
+  margin-top: 13rem;
+}
+
+.contact .container-contact #contact h2 {
+  font-size: 5.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+
+  color: #2c2738;
+}
+
+.contact .container-contact #contact p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  margin-top: 4.8rem;
+
+  color: #122c3d;
+}
+
+.contact .container-contact #contact form {
+  background: white;
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 3rem;
+
+  margin-top: 6.1rem;
+  margin-bottom: 15.8rem;
+  padding: 8.5rem;
+
+  width: 81rem;
+  height: 63.1rem;
+}
+
+.contact .container-contact #contact form .name-form label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  color: #2c2738;
+}
+
+.contact .container-contact #contact form .name-form input {
+  width: 66rem;
+  height: 5.2rem;
+
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.8rem;
+
+  margin-top: 0.3rem;
+  margin-bottom: 3.4rem;
+}
+
+.contact .container-contact #contact form .email-form label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  color: #2c2738;
+}
+
+.contact .container-contact #contact form .email-form input {
+  width: 66rem;
+  height: 5.2rem;
+
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.8rem;
+
+  margin-top: 0.3rem;
+  margin-bottom: 3.4rem;
+}
+
+.contact .container-contact #contact form .message-form label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  color: #2c2738;
+}
+
+.contact .container-contact #contact form .message-form textarea {
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.8rem;
+  resize: none;
+
+  width: 66rem;
+  height: 12rem;
+
+  margin-top: 0.3rem;
+  margin-bottom: 3.4rem;
+}
+
+.contact .container-contact #contact form button {
+  background: #c2525e;
+  color: white;
+
+  width: 22rem;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.contact .container-contact .contact-img img {
+  width: 49.2rem;
+  height: 44.2rem;
+  margin-right: 20.5rem;
+}
