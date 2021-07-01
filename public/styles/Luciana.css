@@ -1,33 +1,43 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  text-align:justify;
+  padding-right: 10px;
+  line-height: 1,5;  
 }
 
-.wrappCard > .card1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-  justify-content: space-between;
+.wrappCard {     
+  display: flex;  
+  flex-direction: column;       
 }
 
-/*.wrappCard {     
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; 
-  align-items: center;    
-  padding: 20px;   
-  
-}*/
 .card1 img {
-  width: 30%;
+  width: 50%;
+  min-width: 100%;
+}
+
+.text-doar{  
+  width: 100%;
 }
 
 .card1 {
   display: flex;
   justify-content: space-between;
+  padding: 80px;
+  font-size: 15px;  
 }
 
-.card2 {
+.card2 img {
+  width: 50%;
+  min-width: 100%;
+}
+
+.text{
+  width: 100%;
+}
+
+.card2 { 
   display: flex;
   justify-content: space-between;
+  padding: 80px;
+  font-size: 15px;
 }
