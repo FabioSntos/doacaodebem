@@ -1,21 +1,17 @@
-* {
-  font-family: 'Open Sans', sans-serif;
-  text-align:justify;
-  padding-right: 10px;
-  line-height: 1,5;  
+.wrappCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
-
-.wrappCard {     
-  display: flex;  
-  flex-direction: column;       
+.wrappCard .text-doar {
+  width: 60%;
 }
-
 .card1 img {
-  width: 50%;
-  min-width: 100%;
+  width: 100%;
+  max-width: 300px;
 }
 
-.text-doar{  
+.text-doar {
   width: 100%;
 }
 
@@ -23,21 +19,19 @@
   display: flex;
   justify-content: space-between;
   padding: 80px;
-  font-size: 15px;  
+  font-size: 15px;
 }
-
-.card2 img {
-  width: 50%;
-  min-width: 100%;
+.wrappCard .text {
+  width: 65%;
 }
-
-.text{
-  width: 100%;
-}
-
-.card2 { 
+.card2 {
   display: flex;
   justify-content: space-between;
   padding: 80px;
   font-size: 15px;
+}
+
+.card2 img {
+  width: 100%;
+  max-width: 300px;
 }

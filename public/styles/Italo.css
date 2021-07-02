@@ -1,0 +1,81 @@
+.Header {
+  height: 70vh;
+  background-image: url('../../imagens/background.png');
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.menu ul li {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.menu li a {
+  color: #fff;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.button-doar {
+  margin-left: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button-doar li a {
+  font-size: 16px;
+  color: #c2525e;
+}
+
+.title-home {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10%;
+  color: #fff;
+}
+.title-home span {
+  font-size: 20px;
+}
+.title-home h1 {
+  padding-top: 5px;
+  font-size: 42px;
+}
+
+.title-home p {
+  padding-top: 10px;
+  max-width: 500px;
+  font-size: 16px;
+}
+.btn-doar-2 {
+  width: 170px;
+  height: 50px;
+  background: #fff8de;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-doar-2 li a {
+  font-size: 18px;
+  color: #c2525e;
+}

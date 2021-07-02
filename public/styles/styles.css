@@ -1,3 +1,7 @@
 @import 'baseboard.css';
 @import 'slide.css';
 @import 'Luciana.css';
+@import 'Italo.css';
+* {
+  font-family: 'Open Sans', sans-serif;
+}
