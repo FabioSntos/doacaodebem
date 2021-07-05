@@ -17,3 +17,10 @@
 html {
   font-size: 62.5%;
 }
+
+.ButoonDonate a{
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-around;
+  font-size:30px
+}
