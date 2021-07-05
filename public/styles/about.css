@@ -1,0 +1,37 @@
+.about {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.about .about-img img {
+  width: 40rem;
+  height: 40rem;
+}
+
+.about .about-text {
+  width: 60%;
+  margin-right: 12rem;
+}
+
+.about .about-text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  list-style: 4.9rem;
+  color: #2c2738;
+
+  margin-top: 19rem;
+}
+
+.about .about-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  list-style: 2.7rem;
+  color: #122c3d;
+}
+
+.about div:nth-child(1) {
+  margin-bottom: 14rem;
+}
