@@ -1,6 +1,6 @@
 .Header {
   height: 70vh;
-  background-image: url('../../imagens/background.png');
+  background-image: url("../images/header/background.png");
   background-size: cover;
 }
 
