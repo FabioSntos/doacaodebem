@@ -79,16 +79,15 @@
   transform: scale(1);
 }
 
-.grid-section button {
+.grid-section .donation-button {
   background: #c2525e;
   color: white;
 
-  width: 28rem;
-  height: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
   border-radius: 0.8rem;
-
-  margin-top: 7.4rem;
-  margin-bottom: 7.9rem;
 
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
