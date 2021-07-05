@@ -79,7 +79,15 @@
   transform: scale(1);
 }
 
-.grid-section .donation-button {
+.grid-section .ButoonDonate {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 7.4rem;
+  margin-bottom: 7.9rem;
+}
+
+.grid-section .ButoonDonate a {
   background: #c2525e;
   color: white;
 
@@ -95,4 +103,9 @@
   line-height: 2.2rem;
 
   cursor: pointer;
+}
+
+.grid-section .division img {
+  display: flex;
+  margin: 0 auto;
 }
