@@ -1,3 +1,17 @@
+.grid-section {
+  background: #f8f7f7;
+}
+
+.grid-section h2 {
+  text-align: center;
+  padding-top: 7.8rem;
+  margin-bottom: 7.4rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
 .galeria {
   grid-column: 1 / -1;
 }
@@ -63,4 +77,21 @@
 .custom-controls li.active {
   opacity: 1;
   transform: scale(1);
+}
+
+.grid-section button {
+  background: #c2525e;
+  color: white;
+
+  width: 28rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+
+  margin-top: 7.4rem;
+  margin-bottom: 7.9rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 }
