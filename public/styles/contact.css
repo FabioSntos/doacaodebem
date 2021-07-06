@@ -64,3 +64,16 @@
     width: 35px;
     margin-right: 10px;
 }
+
+@media screen and (max-width:747px){
+    .btn-contact-div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-contact-div a{
+        padding:0;
+    }
+    .btn-contact-div .btn-email{
+        margin-right: 0;
+    }
+}

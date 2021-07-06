@@ -5,9 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/public/styles/styles.css" />
+
   <title>OngProject</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 
@@ -21,18 +26,27 @@
           <div class="logo">
             <img src="./public/images/header/logo.png" alt="">
           </div>
-          <nav class="menu">
-            <ul>
+
+          <nav class="menu" menu-bar>
+
+            <div id="menu-hamburguer" onclick="onClickMenu()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+
+            <ul id="menu-opc">
               <li><a href="#">Inicio</a></li>
-              <li><a href="#">Nossa história</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Compre pelo Whatsapp</a></li>
+              <li><a href="#about">Nossa história</a></li>
+              <li><a href="#ajudar">Contato</a></li>
+              <li><a href="#contato">Compre pelo Whatsapp</a></li>
             </ul>
             <div class="button-doar">
               <a href="#">Quero doar</a>
             </div>
           </nav>
         </header>
+
         <div class="title-home">
           <span>COMPRE UM BEM E FAÇA O BEM</span>
           <h1>Ajude-nos a ajudar</h1>
@@ -47,9 +61,9 @@
 
     </section>
 
-    <section>
-      <div class="about">
-        <div class="about-text">
+    <section >
+      <div class="about" >
+        <div class="about-text" id="about">
           <h2>Nossa história</h2><br>
           <p>Somos Jefferson e Monique. Acreditamos na ideia de que SOMOS TODOS UM e que todos os dias temos a oportunidade de fazer o BEM.<br>
           Nós somos movidos e comovidos por projetos que lutam contra a desigualdade social, a fome, a miséria, a falta de oportunidade, dentre outros problemas que afligem nossa sociedade.<br>
@@ -70,15 +84,8 @@
 
       <h2>Para onde vão nossas doações?</h2>
 
-      <ul class="custom-controls">
-        <li><img src="img/slide/foto1.jpg" alt=""></li>
-        <li><img src="img/slide/foto2.jpg" alt=""></li>
-        <li><img src="img/slide/foto3.jpg" alt=""></li>
-        <li><img src="img/slide/foto4.jpg" alt=""></li>
-        <li><img src="img/slide/foto5.jpg" alt=""></li>
-        <li><img src="img/slide/foto6.jpg" alt=""></li>
-      </ul>
       <div class="slide-wrapper">
+       
         <ul class="slide">
           <li><img src="img/slide/foto1.jpg" alt="">
             <strong>Bullet Title</strong>
@@ -129,7 +136,7 @@
 
     <div class='wrappCard'>
       <div class="card1">
-        <div class="text-doar">
+        <div class="text-doar" id="ajudar">
           <h2>Como posso doar?</h2>
           <p>Para fazer doações em qualquer valor, pode ser feito um PIX ou transferência bancária.
             O PIX dever ser feito para o código: 11998127521 ou basta ler o QRCode ao lado.
@@ -169,13 +176,13 @@
       </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contato">
         <h1>Contato</h1>
         <span>Entre em contato com o Doação de bem através dos canais oficias:</span>
 
         <div class="btn-contact-div">
 
-          <a href="mailto:italosport110@hotmail.com" class="btn-email"> <img src="/public/images/Vector.svg" alt=""> Email: doacaodebem@email.com.br</a>
+          <a href="mailto:doacaodebem@email.com.br" class="btn-email"> <img src="/public/images/Vector.svg" alt=""> Email: doacaodebem@email.com.br</a>
         
           <a href="https://api.whatsapp.com/send?phone=5511998127521" class="btn-whatsapp"><img src="/public/images/Group.svg" alt=""> Whatsapp: (11) 99812-7521</a>
       
@@ -200,7 +207,42 @@
   </main>
 
 
-  <script type="module" src="js/script.js"></script>
+  <!--<script type="module" src="js/script.js"></script>-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+      $('.slide').slick({
+      centerMode: true,
+      centerPadding: '100px',
+      slidesToShow: 3,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    })
+  </script>
+
+  <script src="js/menu.js"></script>
+
 </body>
 
 

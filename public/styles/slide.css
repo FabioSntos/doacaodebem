@@ -32,24 +32,35 @@
 
 .slide li {
   flex-shrink: 0;
-  width: 300px;
+  width: 115px;
   max-width: 800px;
   margin: 0 20px;
   text-align: center;
-  border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   opacity: 0.8;
-  transform: scale(0.8);
   transition: 0.4s;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: column;
 }
+
+.slick-initialized .slick-slide{
+  display: flex !important;
+}
+
+.slide li strong{
+  font-size:15px;
+}
+
 .slide li p {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .slide img {
   width: 100%;
-  height: 200px;
+  height:200px;
+  border-radius: 100%;
+  max-width:200px;
 }
 .slide li.active {
   opacity: 1;
@@ -60,7 +71,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  grid-column: 1 / -1;
+ 
+  margin-bottom: 25px;
 }
 
 .custom-controls li {
@@ -85,7 +97,7 @@
   justify-content: space-around;
 
   margin-top: 7.4rem;
-  margin-bottom: 7.9rem;
+  margin-bottom: 0.9rem;
 }
 
 .grid-section .ButoonDonate a {

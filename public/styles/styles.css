@@ -11,7 +11,7 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-
+  scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
 }
 
