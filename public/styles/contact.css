@@ -50,7 +50,9 @@
     color: #fff;
     font-size: 13px;
 }
-
+.btn-contact-div a:hover{
+    opacity: 0.9;
+}
 .btn-contact-div .btn-whatsapp{
     background:#C2525E;
 }
