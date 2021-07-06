@@ -1,0 +1,66 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width:1440px;
+    padding: 80px;
+    border-top: 2px solid #afafaf;
+    background:#F8F7F7;
+}
+
+.contact h1{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #2c2738;
+    margin-bottom: 10px;
+
+}
+
+.contact span{
+
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    
+}
+
+.btn-contact-div{
+
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    height: 70px;
+    margin-top: 20px;
+
+}
+
+.btn-contact-div a{
+    
+    height:100%;
+    background:#111;
+    display:flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    padding:10px;
+    width: 289px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.btn-contact-div .btn-whatsapp{
+    background:#C2525E;
+}
+
+.btn-contact-div .btn-email{
+    background:#122C3D;
+    margin-right: 20px;
+}
+
+.btn-contact-div a img{
+    width: 35px;
+    margin-right: 10px;
+}

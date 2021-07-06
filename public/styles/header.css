@@ -1,7 +1,21 @@
+.container{
+  
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+}
+
 .Header {
-  height: 70vh;
+  height: 100vh;
   background-image: url("../images/header/background.png");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  width: 100%;
+
+
 }
 
 header {
@@ -17,29 +31,59 @@ header {
   display: flex;
   list-style-type: none;
 }
+
 .menu ul li {
   margin-left: 20px;
   font-size: 16px;
 }
+
 .menu li a {
   color: #fff;
+  transition:.2s linear;
+  position: relative;
 }
+
+.menu li a::before{
+  content: '';
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  transform: rotate(180deg);
+  top: 20px;
+  transition:1s linear;
+  border-radius: 10px;
+ 
+}
+
+.menu li a:hover::before{
+  width: 80%;
+}
+
 .menu {
   display: flex;
   align-items: center;
 }
+
 .button-doar {
   margin-left: 20px;
   width: 150px;
   height: 50px;
-  background-color: #fff;
+  background: #fff;
   border-radius: 5px;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
-.button-doar li a {
+
+.button-doar:hover{
+  background: #fff8de;
+}
+
+.button-doar a {
   font-size: 16px;
   color: #c2525e;
 }
@@ -47,12 +91,14 @@ header {
 .title-home {
   width: 80%;
   margin: 0 auto;
-  padding-top: 10%;
   color: #fff;
+  margin-top: 162px;
 }
+
 .title-home span {
   font-size: 20px;
 }
+
 .title-home h1 {
   padding-top: 5px;
   font-size: 42px;
@@ -63,6 +109,7 @@ header {
   max-width: 500px;
   font-size: 16px;
 }
+
 .btn-doar-2 {
   width: 170px;
   height: 50px;
@@ -75,7 +122,24 @@ header {
   margin-top: 20px;
 }
 
-.btn-doar-2 li a {
+.btn-doar-2:hover{
+  border: 2px solid #fff;
+  background:none;
+  color: #fff;
+}
+
+.btn-doar-2 a {
   font-size: 18px;
   color: #c2525e;
+}
+
+.btn-doar-2 a:hover{
+  color: #fff;
+}
+
+
+@media screen and (max-width:960px){
+  .menu{
+    display: none;
+  }
 }
