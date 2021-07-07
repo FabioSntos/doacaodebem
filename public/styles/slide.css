@@ -50,6 +50,7 @@
 
 .slide li strong{
   font-size:15px;
+  margin-top: 10px;
 }
 
 .slide li p {
@@ -60,7 +61,7 @@
 .slide img {
   width: 100%;
   height:200px;
-  border-radius: 100%;
+  border-radius: 10px;
   max-width:200px;
   transition: .5s linear;
   box-shadow: 2px 2px 1px #111;

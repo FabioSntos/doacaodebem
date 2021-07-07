@@ -88,13 +88,13 @@
        
         <ul class="slide">
           <li><img src="/public/images/causas-apoiadas/aguas_aruanda.jpg" alt="">
-            <strong>Aguas Aruanda</strong>
+            <strong>Águas de Aruanda</strong>
             <br>
             <p>Supportive text and the essential
               context goes here.</p>
           </li>
           <li><img src="/public/images/causas-apoiadas/casa_consolador.jpg" alt="">
-          <strong>Casa Conslador</strong>
+          <strong>Casa do Conslador</strong>
             <br>
             <p>Supportive text and the essential
               context goes here.</p>
@@ -188,7 +188,7 @@
 
         <div class="btn-contact-div">
 
-          <a href="mailto:doacaodebem@email.com.br" class="btn-email"> <img src="/public/images/Vector.svg" alt=""> Email: doacaodebem@email.com.br</a>
+          <a href="mailto:doacaodebem@email.com.br" target="_blank" class="btn-email"> <img src="/public/images/Vector.svg" alt=""> Email: doacaodebem@email.com.br</a>
         
           <a href="https://api.whatsapp.com/send?phone=5511998127521" class="btn-whatsapp"><img src="/public/images/Group.svg" alt=""> Whatsapp: (11) 99812-7521</a>
       
@@ -226,11 +226,29 @@
       arrows: false,
       responsive: [
         {
+          breakpoint: 900,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 4
+          }
+        },
+        {
           breakpoint: 768,
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '40px',
+            centerPadding: '60px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
             slidesToShow: 3
           }
         },
