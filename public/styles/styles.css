@@ -1,0 +1,24 @@
+@import "baseboard.css";
+@import "slide.css";
+@import "donation.css";
+@import "header.css";
+@import "about.css";
+@import "contact.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 1045px){
+  
+}

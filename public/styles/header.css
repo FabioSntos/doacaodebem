@@ -1,0 +1,244 @@
+.Header {
+  height: 100vh;
+  background-image: url("../images/header/background.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  width: 100%;
+
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  position: relative;
+}
+
+header{
+  display: flex;
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+header .container-header{
+  width: 1440px;
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-menu{ 
+margin-right: 20px;
+}
+
+header .nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+header .nav-menu ul li{
+ margin: 0 10px;
+ position: relative;
+}
+
+.nav-link{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: .1s linear;
+}
+
+.nav-link::before{
+  content: '';
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  transform: rotate(180deg);
+  top: 20px;
+  transition:1s linear;
+  border-radius: 10px;
+}
+
+.nav-link:hover::before{
+  width: 80%;
+}
+
+#button-doar{
+  margin-left: 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding:12px 20px;
+  font-size: 16px;
+  color: #c2525e;
+}
+
+#button-doar:hover{
+  background: #fff8de;
+}
+
+/************************* MOBILE E RESPONSIVIDADE *************************/
+
+#menu-hamburger{
+  display:none;
+  font-size: 30px;
+  z-index: 99999;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s linear;
+}
+
+#menu-hamburger:hover{
+  color: rgb(119, 119, 119);
+}
+
+.menu-mobile{
+  display: none;
+}
+
+#menu-close-hamburger{
+  display: none;
+  font-size: 30px;
+  z-index: 99999;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s linear;
+}
+
+#menu-close-hamburger:hover{
+  color: rgb(119, 119, 119);
+}
+
+@media screen and (min-width:1080px){
+  #menu-close-hamburgerdisplay{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1080px){
+
+    
+  #menu-hamburger{
+      display:block;
+  }
+
+  header .nav-menu > ul{
+     display:none;
+  }
+
+  .menu-mobile{
+      height: 100%;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      right: 0;
+      visibility: hidden;
+  }
+
+  .menu-mobile ul{
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      right: -100%;
+      bottom: 0;
+      align-items: center;
+      justify-content: center;
+      background:#111;
+      transition: .5s linear;
+  }
+
+  .menu-mobile ul li{
+      margin:20px 0!important;
+  }
+
+  .menu-mobile ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+  }
+
+  .menu-mobile ul li a::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      border-radius: 10px;
+      transition: .5s linear;
+  }
+
+  .menu-mobile ul li a:hover::after{
+      width: 100%;
+  }
+  
+  .menu-mobile ul li a:hover{
+    color: #c2525e;
+     
+  }
+
+}
+
+/*************************** TITLE ***********************/
+
+
+.title-home {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 162px;
+}
+
+.title-home span {
+  font-size: 20px;
+}
+
+.title-home h1 {
+  padding-top: 5px;
+  font-size: 42px;
+}
+
+.title-home p {
+  padding-top: 10px;
+  max-width: 500px;
+  font-size: 16px;
+}
+
+.btn-doar-2 {
+  width: 170px;
+  height: 50px;
+  background: #fff8de;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-doar-2:hover{
+  border: 2px solid #fff;
+  background:none;
+  color: #fff;
+}
+
+.btn-doar-2 a {
+  font-size: 18px;
+  color: #c2525e;
+}
+
+.btn-doar-2 a:hover{
+  color: #fff;
+}
