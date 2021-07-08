@@ -13,14 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
 </head>
 
 
 
 <body>
   <main>
-    <section class="Header">
+    <section class="Header" id="header">
       <div class="container">
+        <!--
         <header>
 
           <div class="logo">
@@ -45,7 +49,48 @@
               <a href="#">Quero doar</a>
             </div>
           </nav>
-        </header>
+        </header>-->
+
+
+        <header >
+          <div class="container-header">
+              <div class="logo">
+                <img src="./public/images/header/logo.png" alt="">
+              </div>
+  
+              <nav class="nav-menu">
+                  <ul>
+                      <li class="active"><a href="#header" class="nav-link">Início</a></li>
+                      <li><a href="#about" class="nav-link">Nossa história</a></li>
+                      <li><a href="#ajudar" class="nav-link">Contato</a></li>
+                      <li><a href="#contato" class="nav-link">Compre pelo Whatsapp</a></li>
+                      <li><a href="https://api.whatsapp.com/send?phone=5511998127521"id="button-doar">Quero doar</a></li>
+                  </ul>
+  
+                  <div class="menu-mobile" >
+                      <ul>
+                          <li class="active"><a href="#header" >Início</a></li>
+                          <li><a href="#about">Nossa história</a></li>
+                          <li><a href="#ajudar">Contato</a></li>
+                          <li><a href="#contato">Compre pelo Whatsapp</a></li>
+                          <li><a href="https://api.whatsapp.com/send?phone=5511998127521">Quero doar</a></li>
+                      </ul>
+                  </div>
+                 
+              </nav>
+              <i id="menu-hamburger" class="fas fa-bars" onclick="menuMobile()"></i>
+              <i id="menu-close-hamburger" class="fas fa-times" onclick="menuMobile()"></i>
+          </div>
+  
+      </header>
+
+
+
+
+
+
+
+
 
         <div class="title-home">
           <span>COMPRE UM BEM E FAÇA O BEM</span>

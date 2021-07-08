@@ -11,41 +11,52 @@
 }
 
 .container{
-  
   width: 100%;
   max-width: 1440px;
   height: 100%;
   position: relative;
 }
 
-header {
+header{
   display: flex;
-  justify-content: space-between;
+  padding-top: 20px;
   width: 80%;
   margin: 0 auto;
   align-items: center;
-  padding-top: 20px;
-  
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.menu ul {
+header .container-header{
+  width: 1440px;
+  height:100%;
   display: flex;
-  list-style-type: none;
-  transition: 0.3s ease;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu ul li {
-  margin-left: 20px;
-  font-size: 16px;
+header .nav-menu{ 
+margin-right: 20px;
 }
 
-.menu li a {
+header .nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+header .nav-menu ul li{
+ margin: 0 10px;
+ position: relative;
+}
+
+.nav-link{
   color: #fff;
-  transition:.2s linear;
-  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  transition: .1s linear;
 }
 
-.menu li a::before{
+.nav-link::before{
   content: '';
   height: 2px;
   width: 0%;
@@ -56,39 +67,132 @@ header {
   top: 20px;
   transition:1s linear;
   border-radius: 10px;
- 
 }
 
-.menu li a:hover::before{
+.nav-link:hover::before{
   width: 80%;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.button-doar {
-  margin-left: 20px;
-  width: 150px;
-  height: 50px;
+#button-doar{
+  margin-left: 10px;
   background: #fff;
   border-radius: 5px;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-}
-
-.button-doar:hover{
-  background: #fff8de;
-}
-
-.button-doar a {
+  padding:12px 20px;
   font-size: 16px;
   color: #c2525e;
 }
+
+#button-doar:hover{
+  background: #fff8de;
+}
+
+/************************* MOBILE E RESPONSIVIDADE *************************/
+
+#menu-hamburger{
+  display:none;
+  font-size: 30px;
+  z-index: 99999;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s linear;
+}
+
+#menu-hamburger:hover{
+  color: rgb(119, 119, 119);
+}
+
+.menu-mobile{
+  display: none;
+}
+
+#menu-close-hamburger{
+  display: none;
+  font-size: 30px;
+  z-index: 99999;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s linear;
+}
+
+#menu-close-hamburger:hover{
+  color: rgb(119, 119, 119);
+}
+
+@media screen and (min-width:1080px){
+  #menu-close-hamburgerdisplay{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1080px){
+
+    
+  #menu-hamburger{
+      display:block;
+  }
+
+  header .nav-menu > ul{
+     display:none;
+  }
+
+  .menu-mobile{
+      height: 100%;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      right: 0;
+      visibility: hidden;
+  }
+
+  .menu-mobile ul{
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      right: -100%;
+      bottom: 0;
+      align-items: center;
+      justify-content: center;
+      background:#111;
+      transition: .5s linear;
+  }
+
+  .menu-mobile ul li{
+      margin:20px 0!important;
+  }
+
+  .menu-mobile ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+  }
+
+  .menu-mobile ul li a::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      border-radius: 10px;
+      transition: .5s linear;
+  }
+
+  .menu-mobile ul li a:hover::after{
+      width: 100%;
+  }
+  
+  .menu-mobile ul li a:hover{
+    color: #c2525e;
+     
+  }
+
+}
+
+/*************************** TITLE ***********************/
+
 
 .title-home {
   width: 80%;
@@ -137,36 +241,4 @@ header {
 
 .btn-doar-2 a:hover{
   color: #fff;
-}
-
-
-@media screen and (max-width:960px){
-  .menu{
-    display: none;
-  }
-}
-
-
-
-.menu-hamburguer{
-  
-	width: 35px;
-	height: 30px;
-	margin: 30px 0 20px 20px;
-	cursor: pointer;
-}
-
-.menu-hamburguer .bar{
-  height: 5px;
-	width: 100%;
-	background-color: #b81568;
-	display: block;
-	border-radius: 5px;
-	transition: 0.3s ease;
-}
-#bar1{
-	transform: translateY(-4px);
-}
-#bar3{
-	transform: translateY(4px);
 }
