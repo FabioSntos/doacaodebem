@@ -43,6 +43,8 @@ function rolagem() {
     header.style.position = 'fixed';
     header.style.padding ='0 20px';
     header.style.background ='#122C3D';
+    header.style.left = '0px';
+    header.style.justifyContent ='center';
   } 
  
   else {
