@@ -3,7 +3,9 @@
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  max-width:1440px;
   max-width: 1440px;
+
 }
 
 .card1 img {
@@ -72,6 +74,7 @@
   width: 30rem;
   height: 30rem;
 }
+
 @media screen and (max-width: 1045px) {
   .card1,
   .card2 {
@@ -109,5 +112,15 @@
     font-size: 16px !important;
     margin-bottom: 2rem;
 
+  }
+}
+
+@media screen and (max-width: 460px){
+  .card1{
+    padding: 10px !important;
+  }
+  
+  .text p {
+    min-width: 0px !important;
   }
 }

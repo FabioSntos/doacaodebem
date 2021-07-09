@@ -40,7 +40,6 @@
   margin-bottom: 14rem;
 }
 
-
 @media screen and (max-width: 1045px){
   .about {
     flex-direction: column;
@@ -60,3 +59,4 @@
 
   }
 }
+
