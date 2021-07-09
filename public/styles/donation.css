@@ -115,12 +115,12 @@
   }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 460px){
   .card1{
-    padding: 10px !important;;
+    padding: 10px !important;
   }
   
   .text p {
-    min-width: 0px!important;
+    min-width: 0px !important;
   }
 }
