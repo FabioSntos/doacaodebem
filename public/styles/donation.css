@@ -4,6 +4,8 @@
   margin: 0 auto;
   width: 100%;
   max-width:1440px;
+  max-width: 1440px;
+
 }
 
 .card1 img {
@@ -71,4 +73,54 @@
 .card2 img {
   width: 30rem;
   height: 30rem;
+}
+
+@media screen and (max-width: 1045px) {
+  .card1,
+  .card2 {
+    flex-direction: column;
+  }
+  .card2 {
+    padding: 0;
+  }
+  .card1 .text-doar {
+    text-align: center;
+    margin: 0;
+    min-width: 350px;
+    font-size: 16px !important;
+  }
+  .about .about-text h2 {
+    margin-top: 2rem;
+  }
+  .about .about-text p {
+    font-size: 14px !important;
+  }
+  .wrappCard img {
+    margin: 0 auto ;
+    margin-top: 2rem;
+  }
+  .text {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+  .text h2 {
+    text-align: center !important;
+  }
+  .text p {
+    min-width: 350px;
+    font-size: 16px !important;
+    margin-bottom: 2rem;
+
+  }
+}
+
+@media screen and (max-width: 360px){
+  .card1{
+    padding: 10px !important;;
+  }
+  
+  .text p {
+    min-width: 0px!important;
+  }
 }
